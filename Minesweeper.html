@@ -1,0 +1,42 @@
+<html>
+<head>
+	  <title> Minesweeper </title>
+	  
+<script type="text/javascript" src="Function.js"> </script>
+</head>
+<body onload="Timer()">
+
+<center>
+<font face="Magneto" size="6">
+<font color="LightBlue">Mine</font><font color="Pink">sweeper</font></font><br /> <br />
+<table border="5" style="background-color:white" width="84%"><tr style="background-color:black"><td align="center">
+<table width="100%"><tr><td colspan="2" align="center"><font color="white" size="4"><b>How To Play :</td></tr> <tr></tr>
+<tr><td width="43%"><font color="white"><b>
+01. Fill out the width & height of the board and click submit. <br />
+02. There are mines located randomly on some cells on the board. <br />
+03. <font color="Blue">The goal of the game</font> is to find the location of all <font color="LightBlue">cells that contain no mines</font>. <br />
+04. <font color="LightBlue">Some cells with no mines</font> also contain a number that show how many mines on the neighboring cells. <br />
+05. <font color="LightBlue">"O"</font> button is used to choose a cell that you think <font color="LightBlue">it contains no mines</font>. <br />
+06. <font color="Violet">"X"</font> button is used to mark a cell if you think <font color="Violet">it contains mines</font>. <br />
+07. To remove a mark, just click the <font color="Violet">marked cell</font> when the <font color="Violet">"X"</font> button is active. <br />
+08. You are considered wrong if you choose a cell that contain mines when the <font color="LightBlue">"O"</font> <br />button is active. </td>
+<td width="41%"><font color="white"><b>
+09. The minimum width * height of the board is 3 * 3. <br />
+10. The maximum width * height of the board is 26 * 26. <br />
+11. There are 2 kind of hints in the game. <br />
+12. <font color="Green">HintA</font> = User choose a cell in the board and the answer will be shown. <br />
+13. The number of <font color="Green">HintA</font> that can be used is n = ((width + height) div 6). <br />
+14. <font color="Purple">HintB</font> = The answer of 2 random cells that is still not solved will be shown. <br />
+15. <font color="Purple">HintB</font> can only be used if n is more than 4. <br />
+16. The number of <font color="Purple">HintB</font> that can be used is (n - 4). <br />
+17. There will be (n - 1) <font color="Orange">Wrong Chance(s)</font>. <br />
+18. <font color="Red">You lose</font> if you make a mistake while having 0 <font color="Orange">Wrong Chance</font>. </td></tr></table>
+</td></tr></table><br />
+
+<table><tr align="center" id="Anmt"> </tr></table> <br />
+
+Width : <input id="Wdth" /> Height : <input id="Hght" /> <button id="Sbmt" onclick="Sbmt()"> Submit </button>
+<div id="Opt"> </div>
+<div id="Tbl"> </div>
+
+</body>
